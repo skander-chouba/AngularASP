@@ -10,6 +10,8 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductsComponent } from './products/products.component';
+import { ProductThumbnailComponent } from './product-thumbnail/product-thumbnail.component';
+import { AngularFontAwesomeModule  } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import { ProductsComponent } from './products/products.component';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    ProductsComponent
+    ProductsComponent,
+    ProductThumbnailComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

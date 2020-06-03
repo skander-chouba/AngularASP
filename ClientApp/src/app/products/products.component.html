@@ -1,1 +1,9 @@
-<p>products works!</p>
+<div>
+  <h1>Our Products</h1>
+  <hr/>
+  <div class="row">
+    <div class="col-md-6" *ngFor="let product of products">
+      <app-product-thumbnail></app-product-thumbnail>
+    </div>
+  </div>
+</div>

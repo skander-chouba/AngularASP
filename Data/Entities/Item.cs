@@ -16,8 +16,5 @@ namespace AngularASP.Data.Entities
         public DateTime ArtDate { get; set; }
         public string ArtistName { get; set; }
         public string ArtistId { get; set; }
-
-
-
     }
 }

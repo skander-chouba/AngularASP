@@ -13,3 +13,10 @@
 li > a.active {
   color: #F97924;
 }
+
+header{
+  background-color:#DFC2F2;
+  background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+  background-attachment: fixed;
+  background-size: cover;
+}
