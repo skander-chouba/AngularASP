@@ -7,6 +7,6 @@ namespace AngularASP.Data.Repositories
     public interface IItemsRepository
     {
         Task<Item> GetItemAsync(int id);
-        Task<List<Item>> GetItemsAsync();
+        Task<Item[]> GetItemsAsync();
     }
 }

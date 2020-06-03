@@ -19,11 +19,12 @@ namespace AngularASP.Data.Repositories
             _logger = logger;
         }
 
-        public async Task<List<Item>> GetItemsAsync()
+        public async Task<Item[]> GetItemsAsync()
         {
             try
             {
-                return await _context.Items.ToListAsync();
+                IQueryable<Item> items = _context.Items;
+                return await items.ToArrayAsync();
             }
             catch (Exception ex)
             {
@@ -36,7 +37,8 @@ namespace AngularASP.Data.Repositories
         {
             try
             {
-                return await _context.Items.SingleOrDefaultAsync(item => item.Id == id);
+                IQueryable<Item> query = _context.Items.Where(item => item.Id == id);
+                return await query.FirstOrDefaultAsync();
             }
             catch (Exception ex)
             {
