@@ -1,18 +1,15 @@
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+.nav.navbar-nav{
+  font-size: 15px;
 }
-
-html {
-  font-size: 14px;
+#searchForm{
+  margin-right: 100px;
 }
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
+@media (max-width: 1200px) {
+  #searchForm{
+    display: none;
   }
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+li > a.active {
+  color: #F97924;
 }

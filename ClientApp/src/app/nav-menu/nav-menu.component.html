@@ -22,17 +22,22 @@
         <ul class="navbar-nav flex-grow">
           <li
             class="nav-item"
-            [routerLinkActive]="['link-active']"
+            [routerLinkActive]="['active']"
             [routerLinkActiveOptions]="{ exact: true }"
           >
             <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
           </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
+          <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link text-dark" [routerLink]="['/products']"
+              >Products</a
+            >
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']">
             <a class="nav-link text-dark" [routerLink]="['/counter']"
               >Counter</a
             >
           </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
+          <li class="nav-item" [routerLinkActive]="['active']">
             <a class="nav-link text-dark" [routerLink]="['/fetch-data']"
               >Fetch data</a
             >
